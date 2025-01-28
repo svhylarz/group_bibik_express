@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="x-icon" href="home.png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Care2Home - Cart</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <section id="header">
+        <a href="#" class="logo">Care2Home</a>
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a class="active" href="cart.html"><i class='bx bxs-cart'></i></a></li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="cart" class="section-p1">
+        <h2>Your Shopping Cart</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Product</th>
+                    <th>Name</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Total</th>
+                    <th>Remove</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><img src="images/broom.jpeg" alt="Broom"></td>
+                    <td>Broom</td>
+                    <td>RM 12</td>
+                    <td><input type="number" value="1" min="1"></td>
+                    <td>RM 12</td>
+                    <td><button class="remove">Remove</button></td>
+                </tr>
+                <tr>
+                    <td><img src="images/vacuum.jpg" alt="Vacuum"></td>
+                    <td>Vacuum</td>
+                    <td>RM 100</td>
+                    <td><input type="number" value="1" min="1"></td>
+                    <td>RM 100</td>
+                    <td><button class="remove">Remove</button></td>
+                </tr>
+                <tr>
+                    <td><img src="images/mop n bucket.jpg" alt="Mop & Bucket"></td>
+                    <td>Mop & Bucket</td>
+                    <td>RM 80</td>
+                    <td><input type="number" value="1" min="1"></td>
+                    <td>RM 80</td>
+                    <td><button class="remove">Remove</button></td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="cart-summary">
+            <h3>Cart Summary</h3>
+            <p>Subtotal: <span>RM 192</span></p>
+            <p>Tax (6%): <span>RM 11.52</span></p>
+            <h4>Total: <span>RM 203.52</span></h4>
+            <button class="normal">Proceed to Checkout</button>
+        </div>
+    </section>
+</body>
+</html>
